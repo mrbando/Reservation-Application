@@ -34,7 +34,7 @@ function Dashboard({ date }) {
   }
 
   return (
-    <main>
+    <>
       <h1>Dashboard</h1>
       <div className="d-md-flex mb-3">
         <h4 className="mb-0">Reservations</h4>
@@ -45,7 +45,7 @@ function Dashboard({ date }) {
         <h4 className="mb-0">Tables</h4>
       </div>
       <Tables onFinish={onFinish} tables={tables} />
-    </main>
+    </>
   );
 }
 
