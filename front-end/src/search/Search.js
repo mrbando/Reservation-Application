@@ -8,7 +8,7 @@ function Search() {
   const [showResults, setShowResults] = useState(false);
 
   function changeHandler({ target: { value } }) {
-    setMobileNumber(value);
+    setMobileNumber(value)
   }
 
   function submitHandler(event) {
