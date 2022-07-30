@@ -8,6 +8,11 @@ import { Link } from "react-router-dom";
  * @returns {JSX.Element}
  */
 
+
+// Sidebar menu 
+
+// SeatFreaky, Dashboard, Search, New Reservation, New Table 
+
 function Menu() {
   return (
     <nav className="navbar navbar-dark align-items-start p-0">
@@ -16,35 +21,35 @@ function Menu() {
           className="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
           to="/"
         >
-          <div className="sidebar-brand-text mx-3">
-            <span>SeatFreaky💋</span>
-            <span hidden>Periodic Tables</span>
+          <div className="sidebar-brand-text m-4">
+          <span style={{fontWeight: 'bold'}}>SeatFreaky💋</span>
+          <span hidden>Periodic Tables</span>
           </div>
         </Link>
         <hr className="sidebar-divider my-0" />
         <ul className="nav navbar-nav text-light" id="accordionSidebar">
           <li className="nav-item">
             <Link className="nav-link" to="/dashboard">
-              <span className="oi oi-dashboard" />
-              &nbsp;Dashboard
+              <span className="oi oi-dashboard"  />
+              &nbsp; <span style={{fontWeight: 'bold'}}>Dashboard </span>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/search">
               <span className="oi oi-magnifying-glass" />
-              &nbsp;Search
+              &nbsp;<span style={{fontWeight: 'bold'}}>Search</span>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/reservations/new">
               <span className="oi oi-plus" />
-              &nbsp;New Reservation
+              &nbsp;<span style={{fontWeight: 'bold'}}>New Reservations</span>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/tables/new">
               <span className="oi oi-layers" />
-              &nbsp;New Table
+              &nbsp;<span style={{fontWeight: 'bold'}}>New Table</span>
             </Link>
           </li>
         </ul>

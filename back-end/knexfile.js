@@ -7,19 +7,11 @@
 require('dotenv').config();
 const path = require("path");
 
-// const {
-//   DATABASE_URL = "postgresql://postgres@localhost/postgres",
-//   DATABASE_URL_DEVELOPMENT = "postgresql://postgres@localhost/postgres",
-//   DATABASE_URL_TEST = "postgresql://postgres@localhost/postgres",
-//   DATABASE_URL_PREVIEW = "postgresql://postgres@localhost/postgres",
-//   DEBUG,
-// } = process.env;
-
 const {
-  DATABASE_URL="postgres://amrqgazq:WzokGE14bfjc6CZu8LA_6gcFLrDBbllI@heffalump.db.elephantsql.com/amrqgazq",
-  DATABASE_URL_DEVELOPMENT="postgres://amrqgazq:WzokGE14bfjc6CZu8LA_6gcFLrDBbllI@heffalump.db.elephantsql.com/amrqgazq",
-  DATABASE_URL_TEST="postgres://amrqgazq:WzokGE14bfjc6CZu8LA_6gcFLrDBbllI@heffalump.db.elephantsql.com/amrqgazq",
-  DATABASE_URL_PREVIEW="postgres://amrqgazq:WzokGE14bfjc6CZu8LA_6gcFLrDBbllI@heffalump.db.elephantsql.com/amrqgazq",
+  DATABASE_URL="postgres://yclthdlm:p5uTjCCYcJDiQ-ay66qgwSoxKh0Ud2Hp@heffalump.db.elephantsql.com/yclthdlm",
+  DATABASE_URL_DEVELOPMENT="postgres://yclthdlm:p5uTjCCYcJDiQ-ay66qgwSoxKh0Ud2Hp@heffalump.db.elephantsql.com/yclthdlm",
+  DATABASE_URL_TEST="postgres://yclthdlm:p5uTjCCYcJDiQ-ay66qgwSoxKh0Ud2Hp@heffalump.db.elephantsql.com/yclthdlm",
+  DATABASE_URL_PREVIEW="postgres://yclthdlm:p5uTjCCYcJDiQ-ay66qgwSoxKh0Ud2Hp@heffalump.db.elephantsql.com/yclthdlm",
   DEBUG,
 } = process.env;
 

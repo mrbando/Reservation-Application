@@ -22,7 +22,6 @@ function hasValidFields(req, res, next) {
 
 function hasTableId(req, res, next) {
   const table = req.params.table_id;
-  console.log(table);
   if(table){
       res.locals.reservation = table;
       next();
@@ -131,8 +130,6 @@ function isOccupied(req, res, next) {
 }
 
 async function occupy(req, res) {
-    console.log("DEBUG FINISH");
-    console.log(res.locals.table);
   const data = await service.occupy(res.locals.table);
 
   res.json({
